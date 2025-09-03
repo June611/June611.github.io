@@ -28,6 +28,44 @@
             font-size: 1.3em;
             line-height: 1.8;
         }
+        /* 覆盖导航中三个社交链接文字背景为透明，仅影响封面导航 */
+        .cover-navigation .navigation .label {
+            background: transparent !important;
+        }
+        /* 自我介绍区域简约卡片风格与整齐排版 */
+        .self-intro {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin: 20px 30px 0;
+            text-align: left;
+        }
+        .self-intro p {
+            margin: 0.6em 0;
+        }
+        .self-intro strong { color: #fff; }
+        .self-intro hr {
+            border: 0;
+            border-top: 1px dashed rgba(255, 255, 255, 0.15);
+            margin: 12px 0;
+        }
+        .self-intro .skills-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .self-intro .skills-tags .tag {
+            display: inline-block;
+            padding: 4px 10px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 999px;
+            font-size: 12px;
+            letter-spacing: 0.3px;
+            color: #fff;
+            opacity: 0.9;
+        }
     </style>
 </head>
 
@@ -65,18 +103,28 @@
                         <strong>-「中牟道中」</strong>
                     </p>
                     <div class="self-intro">
-                        <p>您好，我是智越，一名即将毕业的计算机专业学生。<br>目前技术栈是:c++, python, Django, Vue3, MySQL, Docker, Linux，深度学习 </p>
+                        <p>您好，我是智越，一名即将毕业的计算机专业学生。</p>
+                        <div class="skills-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">Vue3</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Linux</span>
+                            <span class="tag">深度学习</span>
+                        </div>
 
-                        <p>我正在学习Web<strong>后端开发</strong>、<strong>机器学习</strong>、<strong>人工智能</strong>和<strong>软件系统架构设计</strong>等方向；
+                        <hr />
+
+                        <p>我正在学习 Web <strong>后端开发</strong>、<strong>机器学习</strong>、<strong>人工智能</strong> 和 <strong>软件系统架构设计</strong> 等方向。我对 <strong>计算机处理器</strong>、<strong>程序高效执行</strong>、<strong>自然语言处理 (NLP)</strong>、<strong>机器学习与大模型推理加速</strong> 感兴趣。</p>
+                        <p>我有 Web 项目独立开发经验，了解从需求调研、业务分析、数据流梳理、数据建模、模块拆分、技术选型、接口设计到测试与部署的完整流程。
+                            
                         </p>
-                        <p>我有Web项目独立开发经验，了解软件开发从需求搜集和分析、业务功能分析、数据流梳理、数据建模、模块分解、技术选型、接口设计、测试和部署的全流程。
-                            我对<strong>计算机处理器</strong>、<strong>程序高效执行</strong>、<strong>自然语言处理(NLP)</strong>、<strong>机器学习和大语言模型推理加速</strong>感兴趣。
-                        </p>
+
                         <blockquote>
                             江天晚霞，舟横野渡，网晒汀沙。一家老幼无牵挂，恣意喧哗。新糯酒香橙藕芽，锦鳞鱼紫蟹红虾。杯盘罢，争些醉煞，和月宿芦花。——赵显宏《满庭芳·渔》
                         </blockquote>
-
-
                     </div>
                     <div class="navigation-wrapper iUp">
                         <div>
@@ -98,7 +146,7 @@
                             </nav> -->
                         </div>
                         <div class="iUp">
-                            <nav class="cover-navigation navigation--social">
+                            <nav class="cover-navigation cover-navigation--primary">
                                 <ul class="navigation">
                                     <li class="navigation__item">
                                         <a href="https://github.com/June611" title="github" target="_blank">
